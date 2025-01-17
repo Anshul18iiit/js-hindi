@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background Color</title>
+</head>
+<body>
+  <h1>Click the button to change the background color!</h1>
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      // Generate a random color
+      const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+      // Apply the random color as the background color of the body
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+</body>
+</html>
